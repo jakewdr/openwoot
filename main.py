@@ -1,8 +1,5 @@
 import keyboard
 
-key1 = "z"
-key2 = "x"
-
 firstPressedKey = None
 
 def onKeyPress(event):
@@ -33,3 +30,5 @@ if __name__ == "__main__":
         keyboard.on_press(onKeyPress)
         keyboard.on_release(onKeyRelease)
         keyboard.wait()
+    if cfg.get("cloutifulMode").lower == "true":
+        pass
